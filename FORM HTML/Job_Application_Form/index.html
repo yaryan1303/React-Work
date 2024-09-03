@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            border: 1px solid #ccc;
+            width: 650px;
+            margin: auto;
+            padding: 0px 39px;
+        }
+        ul{
+            list-style: none;
+        }
+        li{
+            padding: 12px 31px 13px 7px;;
+        }
+        h1,p{
+            text-align: center;
+        }
+        #submit,#reset{
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <form action="/Job_Application_Form" method="post">
+        <h1>REGISTRATION FORM</h1>
+        <hr>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br>Incidunt velit dignissimos consequuntur quam provident,commodi hic <br> amet suscipit similique maiores, doloribus vero ad?</p>
+        <ul>
+            
+            <li>
+                <label for="name">Name:</label>
+                <input type="text" placeholder="Enter your name" id="name" name="name">
+            </li>
+            <li>
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" placeholder="Enter your address">
+            </li>
+            <li>
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" placeholder="Enter your city">
+
+                <label for="state">State:</label>
+                <input type="text" id="state" name="state" placeholder="Enter your state">
+            </li>
+            <li>
+                <label for="zipcode">Zip Code</label>
+                <input type="text" id="zipcode" name="zipcode" placeholder="Enter your zipcode">
+            </li>
+            <li>
+                <label for="country">Country:</label>
+                <input type="text" id="country" name="country" placeholder="Enter your country">
+            </li>
+            <li>
+                <label for="phone">Phone:(H)</label>
+                <input type="text" id="phone" placeholder="Enter your phone no">
+                <label for="fax">Fax:</label>
+                <input type="text" id="fax" placeholder="Enter your fax no">
+            </li>
+            <li>
+                <label for="phone">Phone:(W)</label>
+                <input type="text" id="phone" placeholder="Enter your phone no"><p style="display: inline-block;">(if able to speak freely)</p>
+            <li>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email">
+            </li>
+            <li>
+                <label for="company">Company Name:</label>
+                <input type="text" name="company" id="company" placeholder="Enter your company">
+            </li>
+            <li>
+                <label for="desired">Desired Region:</label>
+                <select name="" id="desired">
+                    <option value="ghaziabad">Ghaziabad</option>
+                    <option value="noida">Noida</option>
+                    <option value="gurugram">gurugram</option>
+                    <option value="other">Other</option>
+                </select>
+                
+            </li>
+
+            <li>
+                <input type="checkbox" name="Stduent" id="Stduent">
+                <label for="student">College Stduent</label>
+                <input type="checkbox" name="acas" id="acas">
+                <label for="acas">ACAS</label>
+                <input type="checkbox" name="fcas" id="fcas">
+                <label for="fcas">FCAS</label>
+                <input type="checkbox" name="asa" id="asa">
+                <label for="asa">ASA</label>
+                <input type="checkbox" name="fas" id="fas">
+                <label for="fas">FSA</label>
+                <input type="checkbox" name="ea" id="ea">
+                <label for="ea">EA</label>
+                <input type="checkbox" name="mba" id="mba">
+                <label for="mba">MBA</label>
+                <input type="checkbox" name="maaa" id="maaa">
+                <label for="maaa">MAAA</label>
+                <input type="checkbox" name="fia" id="fia">
+                <label for="fia">FIA</label>
+                <input type="checkbox" name="fcia" id="fcia">
+                <label for="fcia">FCIA</label>
+                <input type="checkbox" name="ms" id="ms">
+                <label for="ms">M.S.</label>
+                
+            </li>
+
+            <li id="submit">
+                <input type="submit" value="submit">
+            </li>
+            <li id="reset">
+                <input type="reset" value="reset">
+            </li>
+
+            
+        </ul>
+
+
+
+    </form>
+</body>
+</html>
