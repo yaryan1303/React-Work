@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+}
+
+#main-heading {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.inputbox {
+    padding: 10px 15px;
+    font-size: 1.1rem;
+    color: black;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#todo-date {
+    padding: 10px 15px;
+    font-size: 1.1rem;
+    color: black;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #00bfff;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.btn:hover {
+    background-color: #009fcc;
+}
+
+.todo-container {
+    margin-top: 20px;
+}
+
+.todo-item {
+    display: flex; /* Enables flexbox */
+    justify-content: space-between; /* Space items evenly */
+    align-items: center; /* Vertically center all elements */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.common {
+    flex: 2; /* Takes up 2 parts of available space */
+    padding: 16px 15px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.common1 {
+    flex: 1; /* Takes up 1 part of available space */
+    padding: 16px 15px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-align: right; /* Aligns the due date to the right */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.btn {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #e60000;
+}
+
+.container-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
