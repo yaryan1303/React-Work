@@ -1,17 +1,11 @@
-h1{
-  font-weight: 700;
-  font-size: 2rem;
-  margin: 10px;
-  margin-bottom: 25px;
-}
 
 input{
   width: 100%;
 }
 
-/* .items-contaniner{
+.items-contaniner{
   text-align: left;
-} */
+}
 .tudo-container{
   max-width: 800px;
   width: 90%;
