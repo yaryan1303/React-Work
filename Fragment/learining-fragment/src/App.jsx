@@ -1,16 +1,19 @@
+import Items from "./Components/Items";
+import ErrorMeg from "./Components/ErrorMsg";
 
 function App() {
+  // let foodItems=[];
+  let foodItems = ['Dal', 'Milk', 'Roti', 'Green Vegetables', 'Ghee','Chawal']; 
+  // Change to [] to test empty scenario
 
-  let foodItems=['Dal','Milk','Roti','Green Vegitables','Gee']
   return (
     <>
       <center>
         <h1>Healthy Food</h1>
       </center>
-      <ul className="list-group">
-        {foodItems.map(item=><li key={item} className="list-group-item">{item.toUpperCase()}</li>
-)}
-      </ul>
+
+      <Items items={foodItems} />
+      <ErrorMeg items={foodItems} />
     </>
   );
 }
