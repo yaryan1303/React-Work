@@ -1,4 +1,4 @@
-import HeadingCal from "./Compnents/HeadingCal"
+import HeadingCal from "../../../../Cal/Components/HeadingCal"
 import styles from "./App.module.css"
 function App() {
 
