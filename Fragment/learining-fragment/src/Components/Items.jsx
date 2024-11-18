@@ -1,16 +1,21 @@
 import styles from "./Items.module.css";
-const List = ({ items }) => {
 
-  const handleByButtonClicked=(item)=>{
-    console.log(`item being brrought ${item}`)
-
-  };
+const Items = ({ items, boughtItems, onBuyItem }) => {
   return (
-    <ul className="list-group">
-      {items.map((item) => (
-        <li key={item} className="list-group-item">
+    <ul classNameName="list-group">
+      {items.map((item, index) => (
+        <li
+          key={index}
+          classNameName={`list-group-item ${
+            boughtItems.includes(item) ? "active" : ""
+          }`}
+        >
           {item.toUpperCase()}
-          <button type="button" className={`${styles.btn} btn btn-info`} onClick={()=>handleByButtonClicked(item)}>
+          <button
+            type="button"
+            classNameName={`${styles.btn} btn btn-info`}
+            onClick={() => onBuyItem(item)}
+          >
             Buy
           </button>
         </li>
@@ -19,4 +24,4 @@ const List = ({ items }) => {
   );
 };
 
-export default List;
+export default Items;

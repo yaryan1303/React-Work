@@ -1,18 +1,19 @@
-function List({ Tudo }) {
+import { useContext } from "react";
+import ListItems from "../Store/List-item-store"; // Import context
+
+const List = ({ onDelete }) => {
+  const { detail } = useContext(ListItems); // Access the context value
+
   return (
-    <div className="container ">
-      {Tudo.map((item, index) => (
-        <div class="row tr-row" key={index}>
-          <div class="col-5">{item.todo}</div>
-          <div class="col-5">{item.date}</div>
-          <div class="col-2">
-            <button type="button " class="btn btn-danger tr-button">
-              Delete
-            </button>
-          </div>
+    <div>
+      {detail.map((item, index) => (
+        <div key={index}>
+          <span>{item.todo}</span> - <span>{item.date}</span>
+          <button onClick={() => onDelete(item.todo)}>Delete</button>
         </div>
       ))}
     </div>
   );
-}
+};
+
 export default List;
